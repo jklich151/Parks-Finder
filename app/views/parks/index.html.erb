@@ -1,0 +1,9 @@
+<h1><%= @parks.count %> Parks</h1>
+<% @parks.each do |park| %>
+  <ul class="park-info">
+    <li class="name"><%= park.name %></li>
+    <li class="description"><%= park.description %></li>
+    <li class="directionsInfo"><%= park.directions_info %></li>
+    <li class="standardHours"><%= park.standard_hours %></li>
+  </ul>
+<% end %>
